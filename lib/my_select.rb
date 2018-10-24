@@ -1,9 +1,10 @@
 def my_select(collection)
   new_array = []
   collection.select do |number|
-    
+    if number.even?
       new_array.push(yield(number))
-    
-    return new_array
+    end
+  end
+  return new_array
 end
  
