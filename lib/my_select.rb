@@ -1,3 +1,4 @@
 def my_select(collection)
- # your code here!
+  new_array = []
+  collection.select
 end
