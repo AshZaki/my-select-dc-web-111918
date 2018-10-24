@@ -1,7 +1,7 @@
 def my_select(collection)
   new_array = []
-  collection.select do |number|
-    if number.even?
+  collection.each do |number|
+    if yield(number)
       new_array.push(number)
     end
   end
