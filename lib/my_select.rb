@@ -2,7 +2,7 @@ def my_select(collection)
   new_array = []
   collection.select do |number|
     if number.even?
-      new_array.push(yield(number))
+      new_array.push(number)
     end
   end
   return new_array
